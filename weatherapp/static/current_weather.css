@@ -1,0 +1,123 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(29, 144, 252);
+}
+
+#main{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 10%;
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+#hm{
+    position: absolute;
+    height: 10vh;
+    width: 15%;
+    right: 0%;
+    border: none;
+    background-color: rgb(29, 144, 252);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#hm:hover{
+    color: black;
+    background-color: lightblue;
+}
+
+#locHeading{
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    font-size: xxx-large;
+}
+
+#chLoc{
+    position: relative;
+    text-decoration: none;
+    font-size: x-large;
+    color: blue;
+}
+
+#data{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top: 25%;
+}
+
+.boxes{
+    position: absolute;
+    height: 30vh;
+    width: 25vw;
+    margin: 1%;
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+
+#condition{
+    left: 5%;
+}
+
+#temp{
+    left: 35%;
+}
+
+#wind{
+    left: 65%;
+}
+
+#pressure{
+    top: 50%;
+    left: 5%;
+}
+
+#precip{
+    top: 50%;
+    left: 35%;
+}
+
+#vis{
+    top: 50%;
+    left: 65%;
+}
+
+#weather_image{
+    position: absolute;
+    height: 10vw;
+    width: 10vw;
+    top: 20%;
+}
+
+#weather_condition{
+    position: absolute;
+    font-size: x-large;
+    font-weight: bold;
+    left: 12vw;
+    color: rgb(71, 71, 71);
+}
+
+.para{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(71, 71, 71);
+}
+
+#icon{
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    left: 0%;
+}

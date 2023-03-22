@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+    <link rel="stylesheet" href="{% static 'current_weather.css' %}">
+</head>
+<body>
+    <div id="navbar">
+        <img src="{% static 'logo.jpg' %}" alt="icon" id="icon">
+        <form action="home">
+            <input type="submit"  value="Home" id="hm">
+        </form>
+    </div>
+    <div id="main">
+        <h1 id="locHeading" align="center">Your are currently at {{location}} {{a|safe}}</h1>
+        <div id="data">
+            <div id="condition" class="boxes">
+                <h1 align="center">Condition</h3>
+                <img {{weather_image_src|safe}} alt="weather_image" id="weather_image">
+                <p id="weather_condition">{{weather_condition}}</p>
+            </div>
+            <div id="temp" class="boxes">
+                <h1 align="center">Temprature</h3>
+                <p class="para" align="center">
+                    Celsius: {{temp_cel}}<br>
+                    Fahrenheit: {{temp_fer}}<br>
+                    Feel's like: {{feel}}<br>
+                </p>
+            </div>
+            <div id="wind" class="boxes">
+                <h1 align="center">Wind</h3>
+                <p class="para" align="center">
+                    Speed(kph): {{speed_kph}}<br>
+                    Speed(mph): {{speed_mph}}<br>
+                    Degree: {{deg}}<br>
+                    Direction: {{wind_dir}}<br>
+                </p>
+            </div>
+            <div id="pressure" class="boxes">
+                <h1 align="center">Pressure</h3>
+                <p class="para" align="center">
+                    Milibar: {{mili}}<br>
+                    Inches: {{inch}}<br>
+                </p>
+            </div>
+            <div id="precip" class="boxes">
+                <h1 align="center">Precipitation</h3>
+                <p class="para" align="center">
+                    Milimeters: {{mm}}<br>
+                    Inches: {{precip_inch}}<br>
+                </p>
+            </div>
+            <div id="vis" class="boxes">
+                <h1 align="center">Visibility</h3>
+                <p class="para" align="center">
+                    Kilometers: {{vis_km}}<br>
+                    Miles: {{vis_miles}}<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

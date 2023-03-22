@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="{% static 'weather_forecast.css' %}">
+</head>
+<body>
+    <div id="navbar">
+        <img src="{% static 'logo.jpg' %}" alt="icon" id="icon">
+        <form action="home">
+            <input type="submit"  value="Home" id="hm">
+        </form>
+    </div>
+    <div id="main">
+        <h1 id="locHeading" align="center">Your are currently at {{location}} {{a|safe}}</h1>
+        <div id="data">
+            <div id="temp" class="boxes">
+                {{graph_temp|safe}}
+            </div>
+            <div id="wind" class="boxes">
+                {{graph_wind|safe}}
+            </div>
+            <div id="precip" class="boxes">
+                {{graph_precip|safe}}
+            </div>
+            <div id="vis" class="boxes">
+                {{graph_vis|safe}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(29, 144, 252);
+}
+
+#main{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 10%;
+    background-image: url('bgimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#icon{
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    left: 0%;
+}
+
+#cw{
+    position: absolute;
+    height: 10vh;
+    width: 15%;
+    right: 0%;
+    border: none;
+    background-color: rgb(29, 144, 252);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#wf{
+    position: absolute;
+    height: 10vh;
+    width: 15%;
+    right: 15%;
+    border: none;
+    background-color: rgb(29, 144, 252);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#cw:hover{
+    color: black;
+    background-color: lightblue;
+}
+
+#wf:hover{
+    color: black;
+    background-color: lightblue;
+}
+
+#heading{
+    position: absolute;
+    font-size: xxx-large;
+    font-weight: bolder;
+    color: white;
+    top: 40%;
+    left: 25%;
+}

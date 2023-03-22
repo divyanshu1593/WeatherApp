@@ -1,0 +1,92 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(29, 144, 252);
+}
+
+#main{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 10%;
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+#hm{
+    position: absolute;
+    height: 10vh;
+    width: 15%;
+    right: 0%;
+    border: none;
+    background-color: rgb(29, 144, 252);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#hm:hover{
+    color: black;
+    background-color: lightblue;
+}
+
+#locHeading{
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    font-size: xxx-large;
+}
+
+#chLoc{
+    position: relative;
+    text-decoration: none;
+    font-size: x-large;
+    color: blue;
+}
+
+#data{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top: 25%;
+}
+
+.boxes{
+    position: absolute;
+    height: 60vh;
+    width: 40vw;
+    margin: 1%;
+}
+
+#temp{
+    left: 4%;
+}
+
+#wind{
+    left: 48%;
+}
+
+#precip{
+    left: 4%;
+    top: 70vh;
+
+}
+
+#vis{
+    left: 48%;
+    top: 70vh;
+}
+
+#icon{
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    left: 0%;
+}
