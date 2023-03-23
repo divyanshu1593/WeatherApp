@@ -44,7 +44,7 @@ def weather_forecast(request):
     key = '0a63f50c04c0406cbb5194314232103'
     q = 'auto:ip'
     method = "forecast"
-    days = 5
+    days = 14
 
     if locProvided:
         try:
